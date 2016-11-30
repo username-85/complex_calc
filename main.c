@@ -9,9 +9,6 @@
 
 #define MAX_OPER_NUM 4 // +,-,/,*
 
-char get_choice(char const *opers, char const quit);
-char get_first_ch(void);
-
 int main(void) {
 	char choice;
 	char opers[MAX_OPER_NUM + 1] = {0};
@@ -44,4 +41,3 @@ int main(void) {
 
 	return 0;
 }
-
