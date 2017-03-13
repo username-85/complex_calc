@@ -1,6 +1,10 @@
 #include "util.h"
 #include "oper.h"
 
+#include <stdbool.h>
+#include <stdio.h>
+#include <string.h>
+
 struct complex_num{
 	double real, img;
 };

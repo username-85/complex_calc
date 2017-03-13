@@ -1,4 +1,10 @@
 #include "oper.h"
+
+#include <dlfcn.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 #define NAME_LENGTH 30
 
 static void 

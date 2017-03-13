@@ -1,9 +1,6 @@
 #ifndef UTIL_H 
 #define UTIL_H
 
-#include <stdio.h>
-#include <stdbool.h>
-#include <string.h>
 #include <complex.h>
 
 int init_oper_signs(char *oper_signs);
