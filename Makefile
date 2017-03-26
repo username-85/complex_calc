@@ -1,13 +1,17 @@
 CC = gcc
 CFLAGS = -std=c99 -Wall -Wextra
+
+.PHONY: default all clean
+
 TARGET = complex_calc
 LDFLAGS = -ldl
 OBJECTS = $(patsubst %.c, %.o, $(wildcard *.c))
+HEADERS = $(wildcard *.h)
 
 default: $(TARGET)
 all: default
 
-%.o: %.c
+%.o: %.c $(HEADERS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(TARGET): $(OBJECTS)
