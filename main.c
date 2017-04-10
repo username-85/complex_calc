@@ -7,14 +7,15 @@
 
 #define MAX_OPER_NUM 4 // +,-,/,*
 
-int main(void) {
+int main(void)
+{
 	char choice;
 	char opers[MAX_OPER_NUM + 1] = {0};
 
 	init_oper_signs(opers);
 	if (!strlen(opers)) {
 		fprintf(stderr, "There is no libraries in ./lib directory.\n");
-		exit(1);
+		exit(EXIT_FAILURE);
 	}
 
 	printf("Complex number calc.\n");
@@ -37,5 +38,5 @@ int main(void) {
 		printf("\n");
 	}
 
-	return 0;
+	exit(EXIT_SUCCESS);
 }

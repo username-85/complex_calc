@@ -3,7 +3,7 @@ CFLAGS = -std=c99 -Wall -Wextra
 
 .PHONY: default all clean
 
-TARGET = complex_calc
+TARGET = ccalc
 LDFLAGS = -ldl
 OBJECTS = $(patsubst %.c, %.o, $(wildcard *.c))
 HEADERS = $(wildcard *.h)
